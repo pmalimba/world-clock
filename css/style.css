@@ -32,9 +32,6 @@ h2 {
   font-size: 28px;
 }
 
-.city {
-}
-
 .city-container {
   display: flex;
   justify-content: space-between;
