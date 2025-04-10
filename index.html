@@ -14,29 +14,31 @@
 <body>
     <div class="container">
         <h1>World Clock</h1>
-        <select>
+        <select id="city">
             <option value="">Select a city...</option>
-            <option value="">Amsterdam</option>
-            <option value="">Melbourne</option>
-            <option value="">Cape Town</option>
-            <option value="">Singapour</option>
+            <option value="Europe/Amsterdam">Amsterdam</option>
+            <option value="Australia/Melbourne">Melbourne</option>
+            <option value="Africa/Johannesburg">Johannesburg</option>
+            <option value="Europe/Tallinn">Tallin</option>
         </select>
-        <div class="city" id="the-hague">
-            <div>
-                <h2>The Hague 🇳🇱</h2>
-                <div class="date">April 9th 2025</div>
+        <div class="cities">
+            <div class="city" id="the-hague">
+                <div>
+                    <h2>The Hague 🇳🇱</h2>
+                    <div class="date"></div>
+                </div>
+                <div>
+                    <div class="time"><small>PM</small></div>
+                </div>
             </div>
-            <div>
-                <div class="time">18:22:00 <small>PM</small></div>
-            </div>
-        </div>
-        <div class="city" id="auckland">
-            <div>
-                <h2>Auckland 🇳🇿</h2>
-                <div class="date">April 9th 2025</div>
-            </div>
-            <div>
-                <div class="time">18:22:00 <small>PM</small></div>
+            <div class="city" id="auckland">
+                <div>
+                    <h2>Auckland 🇳🇿</h2>
+                    <div class="date"></div>
+                </div>
+                <div>
+                    <div class="time"><small>PM</small></div>
+                </div>
             </div>
         </div>
         <script src="javascript/index.js"></script>
