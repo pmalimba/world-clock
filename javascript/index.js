@@ -21,17 +21,22 @@ function updateTime() {
     "h:mm:ss[<small>]A[</small>]"
   );
 }
-
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  console.log(cityTimeZone); // This will now work
   let cityTime = moment().tz(cityTimeZone);
-  let citiesElement = document.querySelector("#cities");
-  citiesElement.innerHTML = cityTimeZone;
 
-  console.log(cityTimeZone);
+  let citiesElement = document.querySelector("#cities");
+  citiesElement.innerHTML = `
+    <div class="city">
+      <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
+      <div class="time">${cityTime.format("h:mm:ss[<small>]A[</small>]")}</div>
+    </div>
+  `;
 }
-updateTime();
-setInterval(updateTime, 1000);
 
 let citiesSelectElement = document.querySelector("#city");
 citiesSelectElement.addEventListener("change", updateCity);
+
+updateTime();
+setInterval(updateTime, 1000);
