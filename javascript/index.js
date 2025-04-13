@@ -28,10 +28,7 @@ function updateTime() {
 
 // Update selected city
 function updateCity(event) {
-  let cityTimeZone = event.target.value;
-  if (cityTimeZone === "current") {
-    cityTimeZone = moment().tz.guess;
-  }
+  let cityTimeZone = event.target.value;  
   console.log("Selected city:", cityTimeZone);
 
   if (cityTimeZone === "") {
@@ -64,8 +61,8 @@ function updateCity(event) {
   // Map time zones to display names
   let cityName;
   switch (cityTimeZone) {
-    case "":
-      cityName = "";
+    case "America/Jamaica":
+      cityName = "Kingston 🇯🇲";
       break;
     case "Australia/Melbourne":
       cityName = "Melbourne 🇦🇺";
