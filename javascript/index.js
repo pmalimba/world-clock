@@ -69,6 +69,7 @@ function updateCity(event) {
       break;
     case "Europe/Brussels":
       cityName = "Brussels 🇧🇪";
+      break;
     case "Australia/Melbourne":
       cityName = "Melbourne 🇦🇺";
       break;
