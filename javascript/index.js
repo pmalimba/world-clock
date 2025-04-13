@@ -64,8 +64,8 @@ function updateCity(event) {
   // Map time zones to display names
   let cityName;
   switch (cityTimeZone) {
-    case "Europe/Amsterdam":
-      cityName = "Amsterdam 🇳🇱";
+    case "":
+      cityName = "";
       break;
     case "Australia/Melbourne":
       cityName = "Melbourne 🇦🇺";
