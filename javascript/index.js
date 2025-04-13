@@ -28,7 +28,7 @@ function updateTime() {
 
 // Update selected city
 function updateCity(event) {
-  let cityTimeZone = event.target.value;  
+  let cityTimeZone = event.target.value;
   console.log("Selected city:", cityTimeZone);
 
   if (cityTimeZone === "") {
@@ -61,7 +61,7 @@ function updateCity(event) {
   // Map time zones to display names
   let cityName;
   switch (cityTimeZone) {
-    case "America/Jamaica":
+    case "America/Kingston":
       cityName = "Kingston 🇯🇲";
       break;
     case "Australia/Melbourne":
